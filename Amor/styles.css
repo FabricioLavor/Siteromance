@@ -1,0 +1,70 @@
+/* Estilos básicos */
+body {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Painel centralizado e responsivo */
+.painel {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Títulos e imagem */
+h1 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 20px;
+}
+img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botões estilizados */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+#sim, #nao {
+    height: 40px;
+    width: 70px;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#sim:hover {
+    background-color: #d00;
+}
+#nao:hover {
+    background-color: #c00;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    #sim, #nao {
+        width: 60px;
+        height: 35px;
+        font-size: 0.9em;
+    }
+}
